@@ -1,0 +1,83 @@
+{
+  "_from": "@ckeditor/ckeditor5-mention",
+  "_id": "@ckeditor/ckeditor5-mention@19.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-anmGnq944ugRrMBgTouYC1Yw8LPPPCcuYWDMKCB3kUKc6Mvt2cuvZ1wdJbfjJHb3BCTpQomM9XMidDLulRmSLA==",
+  "_location": "/@ckeditor/ckeditor5-mention",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@ckeditor/ckeditor5-mention",
+    "name": "@ckeditor/ckeditor5-mention",
+    "escapedName": "@ckeditor%2fckeditor5-mention",
+    "scope": "@ckeditor",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/@ckeditor/ckeditor5-mention/-/ckeditor5-mention-19.0.1.tgz",
+  "_shasum": "3323de1f4e121eb72675c07c81a04e65f805fe8a",
+  "_spec": "@ckeditor/ckeditor5-mention",
+  "_where": "c:\\addons\\ckeditor5",
+  "author": {
+    "name": "CKSource",
+    "url": "http://cksource.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@ckeditor/ckeditor5-core": "^19.0.1",
+    "@ckeditor/ckeditor5-typing": "^19.0.1",
+    "@ckeditor/ckeditor5-ui": "^19.0.1",
+    "@ckeditor/ckeditor5-utils": "^19.0.1",
+    "lodash-es": "^4.17.10"
+  },
+  "deprecated": false,
+  "description": "Mention feature for CKEditor 5.",
+  "devDependencies": {
+    "@ckeditor/ckeditor5-basic-styles": "^19.0.1",
+    "@ckeditor/ckeditor5-block-quote": "^19.0.1",
+    "@ckeditor/ckeditor5-clipboard": "^19.0.1",
+    "@ckeditor/ckeditor5-editor-classic": "^19.0.1",
+    "@ckeditor/ckeditor5-engine": "^19.0.1",
+    "@ckeditor/ckeditor5-font": "^19.0.1",
+    "@ckeditor/ckeditor5-link": "^19.0.1",
+    "@ckeditor/ckeditor5-paragraph": "^19.1.0",
+    "@ckeditor/ckeditor5-table": "^19.1.0",
+    "@ckeditor/ckeditor5-undo": "^19.0.1",
+    "@ckeditor/ckeditor5-widget": "^19.1.0",
+    "lodash": "^4.17.11"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.7.1"
+  },
+  "files": [
+    "lang",
+    "src",
+    "theme"
+  ],
+  "homepage": "https://ckeditor.com/ckeditor-5",
+  "keywords": [
+    "ckeditor",
+    "ckeditor5",
+    "ckeditor 5",
+    "ckeditor5-feature",
+    "ckeditor5-plugin"
+  ],
+  "license": "GPL-2.0-or-later",
+  "name": "@ckeditor/ckeditor5-mention",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckeditor/ckeditor5.git",
+    "directory": "packages/ckeditor5-mention"
+  },
+  "version": "19.0.1"
+}
