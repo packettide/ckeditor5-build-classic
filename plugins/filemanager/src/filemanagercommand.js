@@ -83,24 +83,24 @@ export default class FileManagerCommand extends Command {
 			}
 		};
 
-		$('body').on( 'filepicker:pick', evt => {
-			const file = evt.selection;
+		window.document.addEventListener( 'filepicker:pick', evt => {
+			const file = evt.detail;
 			if (Object.prototype.toString.call(file) === '[object String]') {
 				insertImages( editor, [file] );
 			} else if (file.file_id) {
-				const file_url = EE.Teepee.filedirUrls[file.upload_location_id] + file.file_name;
+				const file_url = EE.Artee.filedirUrls[file.upload_location_id] + file.file_name;
 				if (!file.isImage && !file.isSVG) {
 					editor.execute( 'link', file_url );
 				} else {
 					insertImages( editor, [file_url] );
 				}
 			}
-			$('body').off( 'filepicker:pick' );
+			window.document.removeEventListener( 'filepicker:pick' );
 		} );
 
 
 		//window.FileManager[ openerMethod ]( options );
-		window.Teepee_browseImages(editor.sourceElement, options);
+		window.Artee_browseImages(editor.sourceElement, options);
 	}
 }
 
