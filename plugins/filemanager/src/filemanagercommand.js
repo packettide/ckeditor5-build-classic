@@ -83,26 +83,28 @@ export default class FileManagerCommand extends Command {
 			}
 		};
 
-		window.document.addEventListener( 'filepicker:pick', evt => {
+		function pickFile(evt) {
 			const file = evt.detail;
 			if (Object.prototype.toString.call(file) === '[object String]') {
 				insertImages( editor, [file] );
 			} else if (file.file_id) {
-				const file_url = EE.Artee.filedirUrls[file.upload_location_id] + file.file_name;
+				const file_url = EE.Rte.filedirUrls[file.upload_location_id] + file.file_name;
 				if (!file.isImage && !file.isSVG) {
 					editor.execute( 'link', file_url );
 				} else {
 					insertImages( editor, [file_url] );
 				}
 			}
-			window.document.removeEventListener( 'filepicker:pick' );
-		} );
+			window.document.removeEventListener( 'filepicker:pick', pickFile );
+		}
 
+		window.document.addEventListener( 'filepicker:pick', pickFile );
 
-		//window.FileManager[ openerMethod ]( options );
-		window.Artee_browseImages(editor.sourceElement, options);
+		window.Rte_browseImages(editor.sourceElement, options);
 	}
 }
+
+
 
 function insertImages( editor, urls ) {
 	const imageCommand = editor.commands.get( 'imageInsert' );
